@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+       <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Hangman</h1>
+        <p class="instructions">Guess the word, one letter at a time.</p>    <!--Instructions-->
+
+        <div class="word-display">
+            <strong>Word:</strong>
+            <div class="word">{{ display_word }}</div>
+        </div>
+
+        <div class="status">
+            <p><strong>Guessed Letters:</strong> {{ guessed_letters }}</p>
+            <p><strong>Attempts Left:</strong> {{ attempts_left }}</p>
+            <p class="message">{{ message }}</p>
+        </div>
+
+        {% if not game_over %}
+        <form method="POST" autocomplete="off">
+<input type="text" id="guessInput" name="guess" maxlength="1" required autocomplete="off" spellcheck="false">
+
+    <button type="submit">Guess</button>
+</form>
+
+
+        {% else %}
+        
+        <a href="{{ url_for('reset') }}" class="reset-btn">🔁 Play Again</a>
+        {% endif %}
+    </div>
+
+<script>
+  window.onload = function() {
+    document.getElementById("guessInput").focus();
+  };
+</script>
+
+</body>
+</html>
