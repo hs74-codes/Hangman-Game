@@ -59,7 +59,8 @@ python app.py
 
 ```
 
-📄 License
+#📄 License
+<br>
 Project owned and copyrighted by hs74-codes
 <br>
 All rights reserved. Unauthorized copying or redistribution is prohibited.
