@@ -9,7 +9,7 @@ You can run it locally or host it online to play.
 ## 📂 Project Structure
 ```
 .
-├── Screenshot/        # Images
+├── Screenshots/        # Images
 ├── static/            # CSS
 ├── templates/         # HTML files
 ├── venv/              # Environment files
