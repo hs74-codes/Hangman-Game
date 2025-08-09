@@ -17,6 +17,11 @@ You can run it locally or host it online to play.
 ├── requirements.txt   # List of Python dependencies
 └── README.md          # Project documentation
 ```
+## 📸 Screenshots
+
+Below is a preview of the Hangman Game in action:
+
+![Hangman Game Screenshot](Screenshots/game_ui.png)
 
 ## 🚀 Features
 - 🎮 **Simple and fun gameplay** – Guess the fruit before you run out of chances.
