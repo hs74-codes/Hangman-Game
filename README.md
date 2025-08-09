@@ -35,13 +35,13 @@ Follow these steps to run the game locally (If using with git clone):
 git clone https://github.com/hs74-codes/Hangman-Game.git
 
 # 2️⃣ Navigate to the project folder
-cd Hangman-Game
+ cd Hangman-Game
 
-# 3️⃣ Install dependencies (if required)
-pip install flask
+# 3️⃣ Install all dependencies from requirements.txt
+ pip install -r requirements.txt
 
 # 4️⃣ Run the app
-python app.py
+ python app.py
 
 ```
 Follow these steps to run the game locally (If using with git clone):
@@ -51,8 +51,8 @@ Follow these steps to run the game locally (If using with git clone):
 # 2️⃣ Navigate to the project folder
 cd Hangman-Game
 
-# 3️⃣ Install dependencies (if required)
-pip install flask
+# 3️⃣ Install all dependencies from requirements.txt
+pip install -r requirements.txt
 
 # 4️⃣ Run the app
 python app.py
